@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+/*-----Обнуление----*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*------Обнуление закончено----*/
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.content {
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px 4px #DCDCDC;
+          box-shadow: 0 0 5px 4px #DCDCDC;
+}
+
+h2 {
+  font-size: calc(20px + 10 * (100vw - 320px) / 1580);
+  text-align: center;
+  font-weight: 700;
+  padding: 25px 0px 20px 0px;
+}
+
+hr {
+  width: 90%;
+  height: 2px;
+  background-color: #DCDCDC;
+  margin: 0 auto;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.input {
+  padding: 15px 0px 10px 0px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.input label {
+  padding: 0px 10px 0px 20px;
+  font-style: italic;
+  color: #DCDCDC;
+}
+
+.input input {
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.name label {
+  padding: 30px 20px 0px 20px;
+}
+
+.msd {
+  width: 90%;
+  margin: 20px auto;
+  padding: 0px 10px 0px 20px;
+}
+
+.msd textarea {
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  padding: 8px;
+  width: 400px;
+  height: 150px;
+}
+#message-error {
+  padding: 0px 10px 0px 20px;
+  font-style: italic;
+  color: #DCDCDC;
+}
+.send {
+  width: 90%;
+  margin: 20px auto;
+  padding: 0px 10px 10px 20px;
+}
+
+.send input {
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  background-color: #708090;
+  color: #fff;
+}
+.line__table {
+  margin-bottom: 30px;
+}
+.table_sort table {
+  border-collapse: collapse;
+}
+
+table {
+  margin: 0px auto;
+  width: 90%;
+
+}
+
+.col_1 {
+  width: 20%;
+}
+
+.col_2 {
+  width: 20%;
+}
+
+.col_3 {
+  width: 40%;
+}
+
+.col_4 {
+  width: 20%;
+}
+
+.table_sort th {
+  color: #fff;
+  background: #708090;
+  cursor: pointer;
+}
+
+.table_sort td,
+.table_sort th {
+  height: 40px;
+  text-align: center;
+  border: 2px solid #DCDCDC;
+  padding: 5px 5px 5px 5px;
+  font-size: calc(6px + 10 * (100vw - 320px) / 1580);
+}
+
+.table_sort> tbody {
+  overflow-y: scroll;
+}
+
+.table_sort tbody tr:nth-child(even) {
+  background: #e3e3e3;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+  position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+  right: 8px;
+  position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+  content: "▼";
+}
+
+th.sorted[data-order="1"]::after {
+  content: "▲";
+}
+.buttom__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 15px auto;
+}
+.buttom__item {
+  padding: 8px 25px;
+  background-color: #708090;
+  color: #fff;
+  cursor: pointer;
+}
+.buttom__block>a.buttom__item {
+  color: #fff;
+}
+
+.technologe {
+  height: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 90%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .msd {
+    width: 100%;
+  }
+
+  .msd textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 454px) {
+  .content {
+    width: 140%;
+  }
+
+  .msd {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 334px) {
+  .input input {
+    width: 90%;
+  }
+}
